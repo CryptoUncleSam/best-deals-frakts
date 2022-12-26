@@ -34,7 +34,7 @@ export default function Home() {
   if (isLoading) return <div className={styles.main}><h2 className={styles.center}>Loading...</h2></div>
   if(data.list[0].name!='') return <div key={`main-div`} className={styles.main}>
     <div key={`sub-div`}>
-      <button key={`button`} type="button" className={styles.boton}><Link href="https://frakt-points-amni9vu27-crypto-tio-sam.vercel.app/">Back</Link></button>
+      <button key={`button`} type="button" className={styles.boton}><Link href="/">Back</Link></button>
       <h2 key={`h2`} className={styles.center}>You have to spent {totalSpent} SOL for {totalPoints} points</h2> 
       <div key={`grid-div`} className={styles.grid}>
         {data.list.map((nft, index)=>{
